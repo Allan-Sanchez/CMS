@@ -1,0 +1,551 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: "Ubuntu-Regular";
+	background: url("../images/bg-textura.png");
+}
+
+ul, ol{
+	padding: 0;
+}
+
+/*=============================================
+SLIDE            
+=============================================*/
+
+#slide{
+	position: relative;	
+    margin: auto;
+	margin-bottom:-50px;
+	overflow:hidden;
+	/* background:white; */
+	background: url("../images/bg-textura.png");
+
+
+}
+
+/*Photo Slide*/
+
+#slide ul li{
+	float: left;
+	width: 25%;
+	display:none;
+}
+
+#slide ul li:first-child{
+	display:block;
+}
+
+#slide ul li img{
+	width: 100%;
+}
+
+#slide ul li .slideCaption{
+	position:relative;
+	width:100%;
+	top:-95px;
+	text-align:center;
+	z-index:1;
+	color:white;
+	background: rgba(0,0,0,.5);
+}
+
+.slideCaption h3{
+	padding-top:10px;
+}
+
+.slideCaption p{
+	padding-bottom:10px;
+}
+
+/*Indicadores Slide*/
+
+#indicadores{
+	position: relative;
+	width: 100%;
+	margin:auto;
+	height: 0px;
+	top: -90px;
+	text-align: center;
+}
+
+#indicadores li{
+	display:inline-block;
+	margin:0px 5px;
+	cursor: pointer;
+	opacity: .5;
+	color: white;
+	text-shadow: 0px 0px 5px #333;
+}
+
+#indicadores li:first-child{
+	opacity: 1;
+}
+
+/*=====  Fin de SLIDE  ======*/
+
+/*=============================================
+TOP           
+=============================================*/
+
+#top div{	
+	padding:30px 20px;
+}
+
+/*=====  Fin de TOP  ======*/
+
+/*=============================================
+ARTICULOS          
+=============================================*/
+
+#articulos ul li{
+	position:relative;
+	padding:20px;
+}
+
+#articulos ul li button{
+	margin-top:30px;
+	}
+
+/*=====  Fin de ARTICULOS  ======*/
+
+/*=============================================
+VIDEOS            
+=============================================*/
+
+#videos div{
+	padding:20px;
+}
+
+/*=====  Fin de VIDEOS  ======*/
+
+/*=============================================
+CONTÁCTENOS           
+=============================================*/
+
+footer#contactenos iframe{
+	height:320px;
+}
+
+footer#contactenos h4{
+	line-height:30px;
+}
+
+footer#contactenos ol{
+	position: relative;
+	list-style:none;
+	margin:auto;
+	width:215px;
+	background: silver;
+}
+	
+footer#contactenos ol li a{
+	float:left;
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	margin:20px 5px;
+	text-align:center;
+	line-height:52px;
+	color:rgba(0,50,100,1);
+	background:white;
+}
+
+footer#contactenos #formulario{
+	background:rgba(0,50,100,1);
+	padding:40px;
+}
+
+footer#contactenos #formulario form input{
+	margin:20px auto;
+}
+
+/*=====  Fin de CONTÁCTENOS  ======*/
+
+/*=============================================
+ESCRITORIO GRANDE                    
+=============================================*/
+
+@media (min-width:1200px){
+
+	/*Logotipo*/
+
+	#logo img{
+		padding:20px 30px;
+	}
+
+	/*Botonera*/
+
+	nav#botonera{
+		margin-top: 1.2%;
+		width: 60%;
+	}
+
+	nav#botonera ul{
+		width: 100%;
+
+	}
+
+	nav#botonera ul li{
+		width: 18%;	
+		text-align: center;
+		background: #ddd;
+		margin: 3% 1%;
+	}
+
+	nav#botonera ul li a{
+		height: 45px;
+		line-height: 12px;
+		color: #111;
+		/* background: #deefdc; */
+		background: #bee5ef;
+		font-weight: 100;
+		font-size: 16px;
+		border: 1px solid rgba(0, 0, 0, 0.089);
+	}
+	nav#botonera ul li a:hover{
+		/* background: #bee5ef; */
+		background: #deefdc;
+
+	}
+
+	/*Slide*/
+
+	#slide ul{
+		position: relative;
+		margin: auto;
+		height: auto;
+		width:400%;
+	}
+
+	#slide div#slideIzq span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 45%;
+		left:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	#slide div#slideDer span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 45%;
+		right:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	/*Galería*/
+
+	#galeria ul li{
+		float:left;
+		width:20%;
+	}
+
+	#galeria ul li img{	
+		width:100%;
+	}
+
+	/*Artículos*/
+
+	#articulos ul li img{
+		float:left;
+		width:30%;
+		margin:20px 20px 20px 0 ;
+	}
+		
+}
+	
+/*=====  Fin de ESCRITORIO GRANDE  ======*/
+	
+/*=============================================
+ESCRITORIO MEDIANO                   
+=============================================*/
+	
+@media (max-width:1199px) and (min-width:992px){
+	
+	/*Logotipo*/
+
+	#logo img{
+		padding:20px 10px;
+	}
+
+	/*Botonera*/
+
+	nav#botonera{
+		margin-top: 3%;
+		width: 60%;
+	}
+		
+	nav#botonera ul{
+		width: 100%;
+	}
+		
+	nav#botonera ul li{
+		width: 18%;
+		text-align: center;
+		background: #ddd;
+		margin: 3% 1%;
+	}
+
+	nav#botonera ul li a{
+		height: 35px;
+		line-height: 5px;
+		color: #111;
+		background: #deefdc;
+		font-weight: 100;
+	}
+
+	/*Slide*/
+
+	#slide ul{
+		position: relative;
+		margin: auto;
+		height: auto;
+		width:400%;
+	}
+
+	#slide div#slideIzq span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 40%;
+		left:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	#slide div#slideDer span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 40%;
+		right:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	/*Galería*/
+
+	#galeria ul li{
+		float:left;
+		width:20%;
+	}
+
+	#galeria ul li img{	
+		width:100%;
+	}
+
+	/*Artículos*/
+
+	#articulos ul li img{
+		float:left;
+		width:35%;
+		margin:30px 20px 20px 0 ;
+	}
+
+}
+	
+/*=====  Fin de ESCRITORIO PEQUEÑO  ======*/
+	
+/*=============================================
+TABLET                 
+=============================================*/
+	
+@media (max-width:991px) and (min-width:768px){
+	 
+	/*Logotipo*/
+
+	#logo img{
+		padding:20px 30%;
+	}
+
+	/*Botonera*/
+
+	nav#botonera{
+		margin: 2% 0;
+		width: 100%;
+	}
+		
+	nav#botonera ul{
+		width: 100%;
+	}
+		
+	nav#botonera ul li{
+		width: 18%;
+		text-align: center;
+		background: #ddd;
+		margin: 0 1%;
+	}
+
+	nav#botonera ul li a{
+		height: 35px;
+		line-height: 5px;
+		color: #111;
+		background: #deefdc;
+		font-weight: 100;
+	}
+
+	/*Slide*/
+
+	#slide ul{
+		position: relative;
+		margin: auto;
+		height: auto;
+		width:400%;
+	}
+
+	#slide div#slideIzq span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 35%;
+		left:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	#slide div#slideDer span{
+		position: absolute;
+		font-size: 30px;
+		color: white;
+		top: 35%;
+		right:50px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	/*Galería*/
+
+	#galeria ul li{
+		float:left;
+		width:20%;
+	}
+
+	#galeria ul li img{	
+		width:100%;
+	}
+
+	/*Artículos*/
+
+	#articulos ul li img{
+		float:left;
+		width:40%;
+		margin:25px 20px 20px 0 ;
+	}
+	
+}
+	
+/*=====  Fin de TABLET  ======*/
+	
+/*=============================================
+PHONES                
+=============================================*/
+	
+@media (max-width:767px){
+
+	/*Logotipo*/
+
+	#logo{
+		background: white;
+	}
+
+	#logo img{
+		padding:20px 20%;
+	}
+
+	/*Botonera*/
+
+	#botonera{
+		overflow-x:hidden;
+	}	
+
+	#botonera ul li a{
+		padding: 10px 30px;
+		
+	}
+
+	/*Slide*/
+
+	#slide ul{
+		position: relative;
+		margin:auto;
+		margin-bottom:20px;
+		height: 140px;
+		width:400%;
+	}
+
+	#slide div#slideIzq span{
+		position: absolute;
+		font-size: 20px;
+		color: white;
+		top: 40%;
+		left:30px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	#slide div#slideDer span{
+		position: absolute;
+		font-size: 20px;
+		color: white;
+		top: 40%;
+		right:30px;
+		text-shadow:0px 0px 10px #000;
+		cursor: pointer;
+	}
+
+	.slideCaption{
+		display:none;
+	}
+
+	#indicadores{
+		display:none;
+	}
+
+	/*Galería*/
+
+	#galeria ul li{
+		float:left;
+		width:50%;
+	}
+
+	#galeria ul li img{	
+		width:100%;
+	}
+
+	/*Artículos*/
+
+	#articulos ul li img{
+		float:left;
+		width:100%;
+		margin:10px auto ;
+	}
+
+}
+
+/*=====  Fin de PHONES  ======*/
+
+/*=============================================
+PLUGIN SCROLL UP               
+=============================================*/
+
+#scrollUp {
+  	bottom: 20px;
+  	right: 20px;
+  	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: url(../images/flecha.jpg);
+}
+
+/*=====  Fin de PLUGIN SCROLL UP  ======*/
